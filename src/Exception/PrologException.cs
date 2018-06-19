@@ -1,16 +1,15 @@
-using System;
 using System.Runtime.Serialization;
 
-namespace Prolog.Exceptions
+namespace Prolog.Exception
 {
     [System.Serializable]
-    public class PrologException : Exception
+    public class PrologException : System.Exception
     {
         public PrologException() {}
 
         public PrologException(string message) : base(message) {}
 
-        public PrologException(string message, Exception inner) : base(message, inner) {}
+        public PrologException(string message, System.Exception inner) : base(message, inner) {}
 
         protected PrologException(
             SerializationInfo info,
