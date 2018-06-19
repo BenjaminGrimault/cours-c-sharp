@@ -7,9 +7,11 @@ namespace Prolog.Model
     {
         private List<Expression> _parameters = new List<Expression>();
 
+        public Fact() {}
+
         public Fact(string name)
         {
-            Name = name;
+            this.Name = name;
         }
 
         public string Name { get; }

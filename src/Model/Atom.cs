@@ -2,12 +2,14 @@ namespace Prolog.Model
 {
     public class Atom : Expression
     {
+        public string Name { get; }
+
+        public Atom() {}
+
         public Atom(string name)
         {
-            Name = name;
+            this.Name = name;
         }
-
-        public string Name { get; }
 
         public override string ToString()
         {

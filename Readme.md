@@ -13,6 +13,13 @@ Question:
 
 ```
 
-# DB
+## Génération d'une migration
 
+```bash
 dotnet ef migrations add <init>
+```
+## Mettre à jour la base de données
+
+```bash
+dotnet ef database update
+```

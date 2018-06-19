@@ -2,11 +2,13 @@ namespace Prolog.Model
 {
     public class Variable : Expression
     {
+        public Variable() {}
+
         public Variable(string name)
         {
-            Name = name;
+            this.Name = name;
         }
-
+        
         public string Name { get; }
 
         public override string ToString()

@@ -2,10 +2,12 @@ namespace Prolog.Model
 {
     public class Rule : Expression
     {
+        public Rule() {}
+
         public Rule(Expression condition, Fact result)
         {
-            Condition = condition;
-            Result = result;
+            this.Condition = condition;
+            this.Result = result;
         }
 
         public Expression Condition { get; }
