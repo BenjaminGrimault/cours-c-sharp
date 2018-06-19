@@ -12,3 +12,7 @@ Question:
     parent(Name1, X) : List<String>
 
 ```
+
+# DB
+
+dotnet ef migrations add <init>
